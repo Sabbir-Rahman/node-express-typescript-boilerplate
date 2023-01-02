@@ -23,4 +23,8 @@ const test = async (req: Request, res: Response): Promise<void> => {
   res.status(response.statusCode).json(response)
 }
 
-export default { test }
+const testSqaureFunction = async (num: number): Promise<number> => {
+  return num*num
+}
+
+export default { test, testSqaureFunction }

@@ -2,4 +2,9 @@ async function test(): Promise<string> {
   return 'test service working'
 }
 
-export default { test }
+
+const testSqaureFunction = async (num: number): Promise<number> => {
+  return num * num
+}
+
+export default { test, testSqaureFunction }

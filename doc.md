@@ -47,4 +47,6 @@ npm i winston
 set the folder structure
 
 set the jest and install
-npm i -D jest @types/jest
+npm i -D jest @types/jest ts-jest
+
+set the jest.config.js file
