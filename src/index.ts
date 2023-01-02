@@ -1,19 +1,20 @@
-import express from 'express';
+import express from 'express'
+import { logInfo } from '../logger/customLogger'
 require('dotenv').config()
 
 const app = express()
 app.use(express.json())
 app.use(
   express.urlencoded({
-    extended: true
+    extended: true,
   })
 )
 const port = process.env.PORT || 5000
 
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
   res.send('Welcome')
 })
 
 app.listen(port, async () => {
-  console.log(`Server running on ${port}`)
+  logInfo('index.ts', './index.ts', `Server running on ${port}`)
 })

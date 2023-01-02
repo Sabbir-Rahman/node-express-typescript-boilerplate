@@ -1,0 +1,3 @@
+# Test api homepage
+GET http://localhost:5000/
+###

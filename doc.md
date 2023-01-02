@@ -19,8 +19,27 @@ write dev script in package.json
 write the build script
 tsc -p .
 
-write the start script 
+write the start script
 cross-env NODE_PATH=dist/ node ./dist/src/app.js
 
 install the dotenv and crossenv file to use env
 npm i dotenv cross-env
+
+setup linter and prettier
+npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+
+create the eslint file
+npx eslint --init
+
+adding pretiier
+npm install --save-dev prettier
+
+create the .prettierc file for prettier
+
+setup the prettier and eslint file
+
+write the format script for easy formating
+prettier --write . --config ./.prettierrc
+
+set the winston logger
+npm i winston
