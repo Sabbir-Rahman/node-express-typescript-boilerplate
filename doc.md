@@ -21,3 +21,6 @@ tsc -p .
 
 write the start script 
 cross-env NODE_PATH=dist/ node ./dist/src/app.js
+
+install the dotenv and crossenv file to use env
+npm i dotenv cross-env
