@@ -43,3 +43,8 @@ prettier --write . --config ./.prettierrc
 
 set the winston logger
 npm i winston
+
+set the folder structure
+
+set the jest and install
+npm i -D jest @types/jest
