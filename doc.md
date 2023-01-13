@@ -50,3 +50,7 @@ set the jest and install
 npm i -D jest @types/jest ts-jest
 
 set the jest.config.js file
+
+install mongoose config
+npm i mongoose config
+install config type
